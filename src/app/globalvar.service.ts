@@ -5,6 +5,7 @@ export class GlobalvarService {
   private Datajudul : String = "inijudul";
   private Dataisi : String = "iniisi";
   private Datatanggal : String = "initanggal";
+  private Datafavorite : boolean = true;
 
   constructor() { }
 
@@ -17,6 +18,9 @@ export class GlobalvarService {
   public getDatatanggal (){
     return this.Datatanggal;
   }
+  public getDatafavorite (){
+    return this.Datafavorite;
+  }
 
   public setDataJudul(x : String){
     this.Datajudul = x;
@@ -26,6 +30,9 @@ export class GlobalvarService {
   }
   public setDatatanggal(x : String){
     this.Datatanggal = x;
+  }
+  public setDatafavorite(x : boolean){
+    this.Datafavorite = x;
   }
 
 }

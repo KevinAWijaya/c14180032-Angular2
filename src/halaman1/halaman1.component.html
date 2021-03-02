@@ -1,3 +1,12 @@
-<p>
-halaman1 works!asd
-</p>
+<div>
+  <h2>INPUT NOTE</h2>
+
+  Judul : <input [(ngModel)]="judul" type="text"> <br>
+  Isi : <input [(ngModel)]="isi" type="text"> <br>
+  Tanggal : {{tanggal}} <br> <br>
+  <button (click)="InputData()">SUBMIT</button> <br> <br>
+  <a routerLink="/halaman2"> lihat notes </a>
+
+
+
+</div>

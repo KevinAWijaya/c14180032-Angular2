@@ -1,0 +1,43 @@
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myBtn").innerText;
+  document.getElementById("demo").innerHTML = x;  
+}
+
+</script>
+
+<div>
+  <h2>NOTE FAVORITE</h2>
+
+  <p *ngIf="like; then templatetrue; else templatefalse"></p>
+
+  <ng-template #templatetrue>
+    Judul : {{item[0].judul}} <br>
+    Isi : {{item[0].isi}} <br>
+    Tanggal : {{item[0].tanggal}} <br>
+  </ng-template>
+  <ng-template #templatefalse>
+    Data Kosong
+  </ng-template>
+  <br>
+  {{data}}.innertext
+  <br>
+
+  <button onclick="myFunction()" id="myBtn">Try it</button>
+  
+
+</div>
+
+
+<!-- <h2>Interpolacja kodu HTML</h2>
+<p>{{htmlCode}}</p>
+
+
+<h2>Bindowanie do `innerHTML`</h2>
+<p [innerHTML]="htmlCode"></p>
+
+
+<p><a [href]="myURL">Not sanitized</a></p>
+
+<a [href]="sanitizedURL">Sanitized Link</a> -->
